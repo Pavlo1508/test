@@ -1,0 +1,138 @@
+.testimonials-title {
+  color: #fcf9f9;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  margin-bottom: 64px;
+}
+
+.testimonials-item {
+  border-radius: 4px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  padding: 54px 18px 18px 18px;
+  text-align: center;
+  position: relative;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.testimonials-item:not(:nth-child(-n + 1)) {
+  display: none;
+}
+
+.testimonials-img {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.testimonials-text {
+  color: #fcf9f9;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: 8px;
+}
+
+.testimonials-desk {
+  color: rgba(252, 249, 249, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 291px;
+}
+
+@media screen and (min-width: 768px) {
+	.testimonials {
+		padding-top: 100px;
+	}
+
+  .testimonials-item:not(:nth-child(3n)) {
+    display: block;
+  }
+
+  .testimonials-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .testimonials-title {
+    font-size: 44px;
+    letter-spacing: -1.32px;
+  }
+
+  .testimonials-desk {
+    font-size: 16px;
+    max-width: 300px;
+    min-width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+	.testimonials {
+			padding-top: 150px;
+		}
+
+  .testimonials-list {
+    gap: 26px;
+  }
+
+  .testimonials-item:not(:nth-child(2n)) {
+    display: block;
+  }
+
+  .testimonials-item {
+    flex-basis: calc((100% - 52px) / 3);
+  }
+
+  .testimonials-title {
+    font-size: 44px;
+    letter-spacing: -0.03em;
+  }
+
+  .testimonials-desk {
+    font-size: 16px;
+    max-width: 306px;
+  }
+
+  .testimonials-list .element-animation:nth-child(1) {
+    transform: translateX(-60px);
+  }
+
+  .testimonials-list .element-show:nth-child(1) {
+    transform: translateX(0);
+  }
+
+  .testimonials-list .element-animation:nth-child(3) {
+    transform: translateX(60px);
+  }
+
+  .testimonials-list .element-show:nth-child(3) {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials-desk {
+    max-width: 360px;
+  }
+}
+
+/* Amimation */
+.testimonials-item.element-animation {
+  opacity: 0;
+  transition: all 1s ease-out;
+  transform: scale(0.9);
+}
+
+.testimonials-item.element-show {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -1,0 +1,23 @@
+/* ======= Modern-normalize ======= */
+@import url('./modern-normalize.css');
+/* ======= Base ======= */
+@import url('./base.css');
+
+/* ======= Header ======= */
+@import url('./header.css');
+
+/* ======= Main ======= */
+/* ------- Hero ------- */
+@import url('./hero.css');
+/* ------- About us ------- */
+@import url('./about-us.css');
+/* ------- Our collection ------- */
+@import url('./our-collection.css');
+/* ------- Your order ------- */
+@import url('./your-order.css');
+/* ------- Testimonials ------- */
+@import url('./testimonials.css');
+
+/* ======= Footer ======= */
+@import url('./footer.css');
+@import url('./up-btn.css');

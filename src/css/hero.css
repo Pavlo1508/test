@@ -1,0 +1,235 @@
+.hero-section {
+  padding-top: 60px;
+}
+
+.hero-one-text {
+  margin-bottom: 40px;
+}
+
+.hero {
+  color: #fcf9f9;
+  font-size: 44px;
+  line-height: 1.22;
+	font-weight: 400;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: transform 1000ms ease-out, opacity 1000ms linear;
+  transform: translateX(+40px) scale(0.9);
+}
+
+.hero-img {
+	border-radius: 4px;
+}
+
+.girl {
+  opacity: 0;
+  transition: transform 1000ms ease-out, opacity 1000ms linear;
+  transform: translateX(-40px) scale(0.9);
+}
+
+/* Amimation */
+
+.girl.element-show {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+
+.hero.element-show {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+
+.hero-span {
+  color: #ecd979;
+}
+
+.hero-order-link {
+  color: #fcf9f9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  margin-left: 70px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms ease-in;
+}
+
+.hero-arrow {
+  display: flex;
+  align-items: flex-end;
+}
+
+.arrow-icon {
+  fill: #ecd979;
+  width: 24px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.hero-order-link:hover,
+.hero-order-link:focus {
+  border-color: rgba(236, 217, 121, 1);
+  box-shadow: 0.5px 0.5px 3px #ecd979;
+}
+
+.egg-image {
+	transition: transform 1000ms ease-out;
+	cursor: url(../img/png/heart2.png), default;
+}
+
+.egg-image:hover {
+	transform: scale(1.2);
+}
+
+.hero-two {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-one-text {
+    padding-top: 26px;
+  }
+
+  .hero {
+    font-size: 54px;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    max-width: 549px;
+  }
+
+  .hero-order-link {
+    font-size: 16px;
+    padding: 14px 39px;
+		margin-left: 141px;
+  }
+
+  .hero-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .star {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .star-text {
+    color: rgba(252, 249, 249, 0.4);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+    max-width: 115px;
+    margin: 0 auto;
+  }
+  /* .egg {
+        width: 147px;
+        height: 99px;
+        border: 1px solid #000;
+        background: url(./img/jpg/image.jpg), lightgray -2.282px -3.431px / 105.126% 103.318% no-repeat;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  /* margin: 0 auto; */
+  /* background-color: white;
+        border-top-right-radius: 40%;
+        border-top-left-radius: 40%; */
+  /* } */
+
+  /* .egg {
+            width: 139px;
+            height: 197px;
+            position: relative;
+            background-image: url(./img/jpg/image.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            border-radius: 48% 49% 10% 10% / 59% 66% 10% 10%;
+            border-radius: 48% 49% 10% 10% / 48% 49% 10% 10%;
+            transform: translateY(97px);
+    } */
+
+  /* .egg-image {
+            width: 139px;
+            height: 97px;
+        } */
+
+  /* @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            .egg {
+                background-image: url(./img/jpg/image@2x.jpg);
+            }
+    } */
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+  .hero-one {
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+  }
+
+  .hero-order-link:hover,
+  .hero-order-link:focus {
+    transform: scale(1.1);
+  }
+
+  .hero-one {
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+  }
+
+  .hero-one-text {
+    margin-bottom: 0;
+    padding-top: 66px;
+  }
+
+  .hero {
+    margin-top: 0;
+		min-width: 518px;
+  }
+
+  .hero-two {
+    padding-top: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-one-text {
+    padding-top: 66px;
+  }
+
+  .hero {
+    font-size: 64px;
+    line-height: 1.15;
+    min-width: 632px;
+  }
+
+  .hero-two {
+    padding-top: 66px;
+  }
+}
